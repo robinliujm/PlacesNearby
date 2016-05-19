@@ -1,0 +1,60 @@
+﻿<html>
+<head>
+    <title>Find Places Nearby</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link rel="shortcut icon" href="../favicon.ico">
+
+
+
+
+    <!-- Start of PlacesNearby in html head -->
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry&language=en&key=AIzaSyAeoWbu69WNABKko9bPeBv9KMl48Xp_gIA"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="/custom/extensions/PlacesNearby/css/map.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="/custom/extensions/PlacesNearby/css/container.css" />
+		<link rel="stylesheet" type="text/css" href="/custom/extensions/PlacesNearby/css/component.css" />
+		<script type="text/javascript" src="/custom/extensions/PlacesNearby/js/jquery.slimscroll.min.js"></script>
+		<script src="/custom/extensions/PlacesNearby/js/modernizr.custom.js"></script>
+		<script src="/custom/extensions/PlacesNearby/js/classie.js"></script>
+		<script src="/custom/extensions/PlacesNearby/js/mlpushmenu.js"></script>
+		<script src="/custom/extensions/PlacesNearby/js/map-style.js"></script>
+		<script src="/custom/extensions/PlacesNearby/js/main.js"></script>
+    <!-- end of PlacesNearby in html head -->
+
+
+
+
+</head>
+<body>
+
+
+
+
+    <!-- start of PlacesNearby in html body-->
+		<script type="text/javascript" charset="utf-8">
+
+			var propertyAddress = "1230 Albert st, regina, SK , Canada";
+			var latitude = 50.381071;
+			var longitude = -105.583663;
+			// list of FacingDirection: North, NorthEast, East, SouthEast, South, SouthWest, West, NorthWest
+			var facingDirection = "west";
+			var currentPrice = "$149,900";
+
+			GMPN.Create({
+				InstalledPath: "/Custom/Extensions/PlacesNearby/",
+				MaxWidth: 600,
+				Height: 400,
+				Address: "propertyAddress",
+				LatLng: {lat: latitude, lng: longitude},
+				Title: "Places Nearby",
+				MarkerTitle: "propertyAddress <br> Current Price: currentPrice", 
+				//see documentation for more parameter options
+				});
+		</script>
+	<!-- End of PlacesNearby in html body-->
+
+
+
+</body>
+</html>
