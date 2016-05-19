@@ -1,0 +1,106 @@
+/******* CSS - STYLE FOR THE MAPS # AUTHOR: blueowlscripts@gmail.com *******/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+
+#widgetBoxContent .firstHeading {font-size: 14px;}
+
+.marker-info-window {
+	background:#A7BDC9;
+	padding:3px 6px;
+	margin-right:5px;
+	border-radius:2px;
+	font-size:14px;
+	color:#FFFFFF;
+}
+
+#mapCanvas {
+	width:100%;
+	height:400px;
+}
+		
+input[type="text"] {
+    line-height:normal !important;
+}		
+		
+.pac-container{
+	margin-top:5px; 
+}		
+	
+.pac-container:after {  /* Disclaimer: not needed to show 'powered by Google' if also a Google Map is shown */
+    background-image: none !important;
+    height: 0px; 
+}
+
+.pac-item-query {
+	font-size: 17px; 
+}
+
+.pac-item {
+    font-family: Open Sans;
+    font-size: 17px;
+    color: #888888;
+	padding:8px;
+	cursor:pointer;
+}
+.pac-matched {
+    font-family: Open Sans;
+    font-size: 17px;
+    font-weight: 600;
+    color: #00acee;
+}
+
+.line {
+    height: 48px;
+    line-height: 48px;
+}
+	  
+.label {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #585858;
+    float: left;
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 5px;
+    padding: 0 5px;
+}	
+
+.label_mini { 
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #585858;
+    float: left;
+    padding-top: 3px;
+}
+
+.label_mini i {
+	font-size: 14px; 
+	padding-right:5px;
+	padding-left:5px
+}
+  
+.lat-lon-field{
+    border: medium none;
+    border-radius: 2px;
+    color: #585858;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 4px;
+    padding: 2px 5px;
+	width:230px
+}
+
+.latlon {
+	width:100%;
+	overflow:hidden;
+	bottom: 0px;
+	position: absolute;
+}
+
+.gm-style .gm-style-iw {
+    font-size: 13px;
+    font-weight: 400;
+	color:#78878c;
+	text-align: left;
+}
